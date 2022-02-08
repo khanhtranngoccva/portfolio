@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #4dd8eb;
+    font-weight: 600;
+    font-size: 4rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #4dd8eb;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #4dd8eb;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+/*
+Background
+*/
+main {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Glass
+*/
+.glass {
+    background: white;
+    height: 80%;
+    width: 60%;
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(.2rem);
+    display: flex;
+}
+
+
+.circle1, .circle2, .circle3 {
+    background: white;
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.1)
+    );
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle1 {
+    top: 10%;
+    left: 70%;
+    height: 30rem;
+    width: 30rem;
+    animation: updown 3s linear infinite;
+}
+
+.circle2 {
+    top: 80%;
+    left: 10%;
+    height: 20rem;
+    width: 20rem;
+    animation: updown 4s linear infinite;
+}
+
+.circle3 {
+    top: -20%;
+    left: -20%;
+    height: 40rem;
+    width: 40rem;
+    animation: updown 5s linear infinite;
+
+}
+
+@keyframes updown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes updown2 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+/*
+Dashboard
+*/
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+    padding-top: 50px;
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+}
+
+.link {
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.2)
+    );
+    width: 75%;
+    align-items: center;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    border-radius: 2rem;
+    display: flex;
+    margin: 1.6rem 0rem;
+    padding: .6rem;
+    position: relative;
+    right: -13%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dashboard .link:hover {
+    background: linear-gradient(
+            to left top,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.7)
+    );
+    transform: scale(1.05);
+    border-radius: 1rem;
+    box-shadow: -3px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+
+.card img {
+    height: 30px;
+    width: 30px;
+}
+
+.dashboard .user img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.link img {
+    height: 50px;
+    width: 50px;
+}
+
+/*
+Projects
+*/
+.status {
+    margin-bottom: 3rem;
+}
+
+.status input {
+    background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+    );
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.projects {
+    flex: 2;
+}
+
+.projects {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    display: flex;
+    background: linear-gradient(
+            to left top,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.projects .card:hover {
+    background: linear-gradient(
+            to left top,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.7)
+    );
+    transform: scale(1.15) translateX(30px) translateY(-15px);
+    box-shadow: -3px 10px 30px rgba(0, 0, 0, 0.1);
+}
