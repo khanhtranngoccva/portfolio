@@ -3,8 +3,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 16px;
+
+    font-size: 12px;
     font-family: "Product Sans Regular", sans-serif;
     height: 100%;
     width: 100%;
@@ -31,7 +31,6 @@ img {
     width: 100%;
 }
 
-
 ul {
     padding-left: 0;
     list-style-type: none;
@@ -42,7 +41,13 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    font-size: 1.75rem;
+    padding-top: 1.5rem;
+}
+
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -57,6 +62,42 @@ main {
     border-radius: 1rem;
     padding: 1rem;
     overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.desktopNav {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-block: 0.5rem;
+    flex-flow: row-reverse wrap;
+}
+
+.desktopNav a {
+    padding: 0.75rem;
+}
+
+.desktopNav button {
+    padding: 0.75rem;
+    font-weight: 600;
+    background: var(--mainGradient);
+    border: none;
+    border-radius: 10px;
+}
+
+.mainIcon {
+    width: 20rem;
+    margin-block: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mainBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .rotatingTextOuter {
@@ -65,17 +106,38 @@ main {
     overflow-y: hidden;
     position: relative;
     display: block;
+    width: 100%;
 }
 
 .rotatingTextOverlay {
     font-size: 1em;
     position: absolute;
     animation: rotatingText 8s infinite ease-out;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .modularCard {
     padding-inline: 1em;
     border-radius: 1em;
+}
+
+.modularCard.withLinks {
+    padding-inline: 0;
+    transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
+}
+
+.modularCard.withLinks:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+.modularCard.withLinks > a {
+    /* A rather cool hack. If you don't do something special, it's just display block with no collapse.*/
+    display: table;
+    padding-inline: 1em;
+    width: 100%;
+    height: 100%;
 }
 
 .modularCard h3 {
@@ -95,6 +157,13 @@ main {
 .servicesList, .projectList, .proficiencyList, .cssArtList, .illustrationList {
     display: grid;
     grid-gap: 1rem;
+}
+
+.servicesList img {
+    width: 40%;
+    display: block;
+    aspect-ratio: 1/1;
+    max-width: 5rem;
 }
 
 .projectTags {
@@ -160,7 +229,7 @@ main {
 .proficiencyCard {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem;
     max-width: 8rem;
     width: 100%;
@@ -169,7 +238,6 @@ main {
 
 .proficiencyList {
     grid-template-columns: repeat(4, 1fr);
-    /*grid-column-gap: 0.5rem;*/
     justify-items: center;
     align-items: center;
 }
@@ -180,10 +248,22 @@ main {
     object-fit: contain;
     object-position: center;
     border-radius: 0.5rem;
+    max-width: 5rem;
+    margin-block: 0;
 }
 
 .proficiencyCard i {
     font-size: 3em;
+}
+
+
+
+
+
+@media only all and (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 @media only all and (min-width: 640px) {
@@ -197,14 +277,64 @@ main {
     body {
         padding: 2rem;
     }
+
+    .mainBanner {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        column-gap: 2rem;
+        text-align: left;
+    }
+
+    .mainText {
+        flex: 4;
+    }
+    .mainIcon {
+        flex: 2;
+    }
+
+    .rotatingTextOverlay {
+        transform: none;
+        left: 0;
+    }
+
+    .mainIcon {
+        flex: 2;
+        max-width: 20rem;
+        position: relative;
+    }
+
+    .mainIcon::before, .mainIcon::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 60%;
+        border-radius: 50%;
+        background: var(--textGradient);
+    }
+
+    .proficiencyList {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
 }
 
 @media only all and (min-width: 1024px) {
+    main {
+        padding-inline: 3rem;
+    }
+
     .servicesList {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .cssArtList, .illustrationList {
+    .cssArtList, .illustrationList, .projectList {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media only all and (min-width: 1200px) {
+    html {
+        font-size: 20px;
     }
 }
