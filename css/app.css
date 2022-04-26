@@ -3,8 +3,9 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 16px;
-    font-family: "Google Sans", sans-serif;
+    font-family: "Product Sans Regular", sans-serif;
     height: 100%;
     width: 100%;
 }
@@ -91,7 +92,7 @@ main {
 }
 
 
-.servicesList, .projectList, .proficiencyList, .cssArtList {
+.servicesList, .projectList, .proficiencyList, .cssArtList, .illustrationList {
     display: grid;
     grid-gap: 1rem;
 }
@@ -186,7 +187,7 @@ main {
 }
 
 @media only all and (min-width: 640px) {
-    .servicesList, .projectList, .cssArtList {
+    .servicesList, .projectList, .cssArtList, .illustrationList {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -203,7 +204,7 @@ main {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .cssArtList {
+    .cssArtList, .illustrationList {
         grid-template-columns: repeat(3, 1fr);
     }
 }
