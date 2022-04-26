@@ -1,0 +1,209 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Google Sans", sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--mainGradient);
+    position: fixed;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input {
+    font: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-block: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    max-width: 70rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.rotatingTextOuter {
+    height: 1.2em;
+    font-size: 1.2em;
+    overflow-y: hidden;
+    position: relative;
+    display: block;
+}
+
+.rotatingTextOverlay {
+    font-size: 1em;
+    position: absolute;
+    animation: rotatingText 8s infinite ease-out;
+}
+
+.modularCard {
+    padding-inline: 1em;
+    border-radius: 1em;
+}
+
+.modularCard h3 {
+    margin-block: 1em;
+}
+
+.modularCard ul {
+    margin-block: 1em;
+}
+
+.modularCard img {
+    margin-block: 1em;
+    border-radius: 1em;
+}
+
+
+.servicesList, .projectList, .proficiencyList, .cssArtList {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.projectTags {
+    display: flex;
+    gap: 0.5em;
+    flex-flow: wrap;
+    font-size: 1em;
+}
+
+.projectTags li {
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+@keyframes rotatingText {
+    0% {
+        top: 0;
+    }
+
+    20% {
+        top: 0;
+    }
+
+    25% {
+        top: -1.2em;
+    }
+
+    45% {
+        top: -1.2em;
+    }
+
+    50% {
+        top: -2.4em;
+    }
+
+    70% {
+        top: -2.4em;
+    }
+
+    75% {
+        top: -3.6em;
+    }
+
+    95% {
+        top: -3.6em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.rotatingTextInner {
+    display: block;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: transparent;
+    background: var(--textGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.proficiencyCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 8rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.proficiencyList {
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-column-gap: 0.5rem;*/
+    justify-items: center;
+    align-items: center;
+}
+
+.proficiencyCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.proficiencyCard i {
+    font-size: 3em;
+}
+
+@media only all and (min-width: 640px) {
+    .servicesList, .projectList, .cssArtList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media only all and (min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+}
+
+@media only all and (min-width: 1024px) {
+    .servicesList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cssArtList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

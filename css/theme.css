@@ -1,0 +1,40 @@
+:root {
+    --mainGradient: linear-gradient(90deg, #7be3ff 0%, #92FE9D 100%);
+    --textGradient: linear-gradient(90deg, #009bc2 0%, #08d91c 100%);
+    --cardTransparency: 0.8;
+}
+
+.glassMorphism {
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 30px 0 rgba(31, 119, 135, 0.15);
+    /*-webkit-backface-visibility: hidden;*/
+    /*-webkit-perspective: 1000;*/
+    /*-webkit-transform: translate3d(0,0,0);*/
+    /*-webkit-transform: translateZ(0);*/
+    /*backface-visibility: hidden;*/
+    /*perspective: 1000;*/
+    /*transform: translate3d(0,0,0);*/
+    /*transform: translateZ(0);*/
+    /*backdrop-filter: blur( 2px );*/
+    /*-webkit-backdrop-filter: blur( 2px );*/
+}
+
+.green {
+    /*background: rgba(130, 255, 151, 0.6);*/
+}
+
+.red {
+    background: rgb(17, 255, 172);
+}
+
+.fa-html5 {
+    color: #ff8f8f;
+}
+
+.fa-css3-alt {
+    color: #51ffa2;
+}
+
+.fa-js-square {
+    color: rgba(255, 202, 0, 0.87);
+}
