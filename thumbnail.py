@@ -4,7 +4,7 @@ import os
 
 def process_file(image_name, basepath):
     image = Image.open(os.path.join(basepath, image_name))
-    image.resize((960, 540)).save(os.path.join(basepath, os.path.splitext(image_name)[0]+".webp"), format="WEBP")
+    image.save(os.path.join(basepath, os.path.splitext(image_name)[0]+".webp"), format="WEBP")
     image.close()
 
 
