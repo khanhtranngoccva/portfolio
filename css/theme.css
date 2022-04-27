@@ -33,7 +33,7 @@
 }
 
 .nudge {
-    animation: nudge 0.2s ease;
+    animation: nudge 0.5s ease;
 }
 
 @keyframes nudge {
@@ -43,7 +43,19 @@
         /*animation-timing-function: cubic-bezier(0, 0.95, 0.4, 1);*/
     }
 
+    25% {
+        transform: translateY(-2%) scaleX(0.99);
+        animation-timing-function: ease-in;
+        /*animation-timing-function: cubic-bezier(1, 0.05, 1, 0.6);*/
+    }
+
     50% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        /*animation-timing-function: cubic-bezier(0, 0.95, 0.4, 1);*/
+    }
+
+    75% {
         transform: translateY(-2%) scaleX(0.99);
         animation-timing-function: ease-in;
         /*animation-timing-function: cubic-bezier(1, 0.05, 1, 0.6);*/
