@@ -53,4 +53,6 @@
             console.log("oof");
         }, 5);
     }
+
+    document.querySelector("#linkTreeModal").style.display = none;
 })();
