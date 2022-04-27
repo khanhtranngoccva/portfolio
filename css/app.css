@@ -381,6 +381,12 @@ main, .linkTree {
     }
 }
 
+@media only all and (min-width: 1500px) {
+    html {
+        font-size: 24px;
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
