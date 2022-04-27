@@ -7,6 +7,8 @@
 .glassMorphism {
     background: rgba( 255, 255, 255, var(--cardTransparency) );
     box-shadow: 0 8px 30px 0 rgba(31, 119, 135, 0.15);
+    /*-webkit-backdrop-filter: blur(5px);*/
+    /*backdrop-filter: blur(2px);*/
 }
 
 ::-webkit-scrollbar {
@@ -64,4 +66,9 @@
     100% {
         transform: translateY(0%);
     }
+}
+
+
+.linkTree {
+    --cardTransparency: 0.95;
 }
