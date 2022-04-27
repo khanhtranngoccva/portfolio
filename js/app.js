@@ -54,5 +54,5 @@
         }, 5);
     }
 
-    document.querySelector("#linkTreeModal").style.display = none;
+    document.querySelector("#linkTreeModal").style.display = "none";
 })();
