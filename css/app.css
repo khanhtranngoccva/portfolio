@@ -183,6 +183,7 @@ main, .linkTree {
     display: block;
     aspect-ratio: 1/1;
     max-width: 5rem;
+    /*margin-inline: auto;*/
 }
 
 .projectTags {

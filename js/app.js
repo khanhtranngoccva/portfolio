@@ -56,4 +56,6 @@
     }
 
     document.querySelector("#linkTreeModal").style.display = "none";
+    
+    Array.from(document.querySelectorAll(".modularCard a")).map(e=>e.target="_blank");
 })();
