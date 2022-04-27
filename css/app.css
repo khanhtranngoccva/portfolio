@@ -24,6 +24,7 @@ body {
 
 button, input {
     font: inherit;
+    cursor: pointer;
 }
 
 img {
@@ -85,12 +86,16 @@ main {
     border-radius: 10px;
 }
 
+.mainIconContainer {
+    position: relative;
+    margin-block: 3rem;
+    cursor: pointer;
+}
+
 .mainIcon {
     width: 20rem;
-    margin-block: 3rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 .mainBanner {
@@ -257,9 +262,6 @@ main {
 }
 
 
-
-
-
 @media only all and (min-width: 480px) {
     html {
         font-size: 16px;
@@ -303,14 +305,6 @@ main {
         position: relative;
     }
 
-    .mainIcon::before, .mainIcon::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 60%;
-        border-radius: 50%;
-        background: var(--textGradient);
-    }
 
     .proficiencyList {
         grid-template-columns: repeat(8, 1fr);
