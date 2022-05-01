@@ -1,1 +1,0 @@
-<img src="testMD.svg" alt="Test Image">
