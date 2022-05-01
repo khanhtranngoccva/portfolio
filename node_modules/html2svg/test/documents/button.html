@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://localhost/alpha-button/examples/button-default.md -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>button - Alpha Component</title>
+<link rel="stylesheet" href="./button/demo.css">
+<link rel="stylesheet" href="./button/button-default.md.css">
+<script src="./button/button-default.md.js"></script>
+<body gtools_scp_screen_capture_injected="true">
+<h1 id="button-alpha-component">button - Alpha Component</h1>
+<p>按照最新的UED button视觉规范制作，传送门: <a href="http://demo.alibaba-inc.com/categories/1767/projects/10482" target="_blank">button DPL</a></p>
+<p>使用中发现任何问题，请向 xiaojie.yxj, sunny.zhouy 吐槽</p>
+<script>(function () {document.createElement('a-button');
+}());</script>
+<h2 id="-button-button">通用场景的Button, 主引导Button</h2>
+<p>适用标签a, input, button</p>
+<style>
+</style>
+<p>普通</p>
+<input class="ui2-button ui2-button-default ui2-button-primary ui2-button-large" type="button" value="primary large">
+<a class="ui2-button ui2-button-default ui2-button-primary ui2-button-medium" href="javascript:;">primary medium</a>
+<button class="ui2-button ui2-button-default ui2-button-primary ui2-button-small">primary small</button>
+<input class="ui2-button ui2-button-default ui2-button-primary ui2-button-large disabled" disabled="disabled" type="button" value="primary large disabled">
+<a class="ui2-button ui2-button-default ui2-button-primary ui2-button-medium disabled" disabled="disabled" href="javascript:;">primary medium disabled</a>
+<button class="ui2-button ui2-button-default ui2-button-primary ui2-button-small disabled" disabled="disabled">primary small disabled</button>
+<p>自定义标签</p>
+<a-button type="primary" size="large" class="ui2-button ui2-button-primary ui2-button-large" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">primary large</span>
+</a-button>
+<a-button type="primary" size="medium" class="ui2-button ui2-button-primary ui2-button-medium" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">primary medium</span>
+</a-button>
+<a-button type="primary" size="small" class="ui2-button ui2-button-primary ui2-button-small" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">primary small</span>
+</a-button>
+<a-button type="primary" size="large" disabled="true" class="ui2-button disabled ui2-button-primary ui2-button-large" aria-disabled="true">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">primary large disabled</span>
+</a-button>
+<a-button type="primary" size="medium" disabled="true" class="ui2-button disabled ui2-button-primary ui2-button-medium" aria-disabled="true">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">primary medium disabled</span>
+</a-button>
+<a-button type="primary" size="small" disabled="true" class="ui2-button disabled ui2-button-primary ui2-button-small" aria-disabled="true">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">primary small disabled</span>
+</a-button>
+
+<script>(function () {require('../component');
+var $ = require('alpha-jquery/jquery');
+$('a-button').on('click', function(){
+    console.log('xxx')
+})
+}());</script>
+<h2 id="-button-button">通用场景的Button, 普通引导Button</h2>
+<p>适用标签a, input, button</p>
+<style>
+</style>
+<p>普通</p>
+<input class="ui2-button ui2-button-default ui2-button-normal ui2-button-large" type="button" value="normal large">
+<a class="ui2-button ui2-button-default ui2-button-normal ui2-button-medium" href="javascript:;">normal medium</a>
+<button class="ui2-button ui2-button-default ui2-button-normal ui2-button-small">normal small</button>
+<input class="ui2-button ui2-button-default ui2-button-normal ui2-button-large disabled" disabled="disabled" type="button" value="normal large disabled">
+<a class="ui2-button ui2-button-default ui2-button-normal ui2-button-medium disabled" disabled="disabled" href="javascript:;">normal medium disabled</a>
+<button class="ui2-button ui2-button-default ui2-button-normal ui2-button-small disabled" disabled="disabled">normal small disabled</button>
+<p>自定义标签</p>
+<a-button type="normal" size="large" class="ui2-button ui2-button-normal ui2-button-large" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">normal large</span>
+</a-button>
+<a-button type="normal" size="medium" class="ui2-button ui2-button-normal ui2-button-medium" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">normal medium</span>
+</a-button>
+<a-button type="normal" size="small" class="ui2-button ui2-button-normal ui2-button-small" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">normal small</span>
+</a-button>
+<a-button type="normal" size="large" disabled="true" class="ui2-button disabled ui2-button-normal ui2-button-large" aria-disabled="true">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">normal large disabled</span>
+</a-button>
+<a-button type="normal" size="medium" disabled="true" class="ui2-button disabled ui2-button-normal ui2-button-medium" aria-disabled="true">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">normal medium disabled</span>
+</a-button>
+<a-button type="normal" size="small" disabled="true" class="ui2-button disabled ui2-button-normal ui2-button-small" aria-disabled="true">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">normal small disabled</span>
+</a-button>
+
+<script>(function () {require('../component');
+}());</script>
+<!--
+通用场景的Button, 次引导Button
+
+```html
+<button class="ui2-button ui2-button-default ui2-button-secondary ui2-button-large">ui2-button-large</button>
+<button class="ui2-button ui2-button-default ui2-button-secondary ui2-button-medium">ui2-button-medium</button>
+<button class="ui2-button ui2-button-default ui2-button-secondary ui2-button-small">ui2-button-small</button>
+<button class="ui2-button ui2-button-default ui2-button-normal ui2-button-large disabled" disabled="disabled">secondary large disabled</button>
+<button class="ui2-button ui2-button-default ui2-button-normal ui2-button-medium disabled" disabled="disabled">secondary medium disabled</button>
+<button class="ui2-button ui2-button-default ui2-button-normal ui2-button-small disabled" disabled="disabled">secondary small disabled</button>
+```
+-->
+<h2 id="button-with-icon">Button with ICON</h2>
+<p>带有Icon的Button</p>
+<style>
+</style>
+<p>普通</p>
+<button class="ui2-button ui2-button-large ui2-button-primary ">
+    <i class="ui2-icon ui2-icon-left ui2-icon-message"></i>Contact Supplier
+</button>
+
+<button class="ui2-button ui2-button-medium ui2-button-normal">
+    Get latest price<i class="ui2-icon ui2-icon-right ui2-icon-favorite"></i>
+</button>
+<p>自定义标签</p>
+
+<a-button type="primary" size="large" class="ui2-button ui2-button-primary ui2-button-large" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">
+<i class="ui2-icon ui2-icon-left ui2-icon-message"></i>
+Contact Supplier
+</span>
+</a-button>
+
+<a-button type="normal" size="medium" class="ui2-button ui2-button-normal ui2-button-medium" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">
+    Get latest price
+    <i class="ui2-icon ui2-icon-right ui2-icon-favorite"></i>
+</span>
+</a-button>
+
+<script>(function () {require('../component');
+}());</script>
+<h2 id="-">与其他控件组合</h2>
+<style>a-overlay{
+    border:1px solid #ccc;
+    background:#fff;
+    box-shadow:1px 2px 3px rgba(0,0,0,0.2);
+    padding:10px;
+}
+</style>
+<div id="test">
+    <a-mod id="abc"><a-button size="small" bd-click="open" class="ui2-button ui2-button-normal ui2-button-small" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode">abc</span>
+</a-button><a-overlay aria-hidden="true" style="display: none; z-index: 99; position: absolute; left: 0px; top: 0px;"><p>abc</p><a-button type="primary" bd-click="close" class="ui2-button ui2-button-primary ui2-button-medium" tabindex="0">
+    <i data-role="iconNode" style="display: none;"></i>
+    <span data-role="labelNode" style="display: inline;">close</span>
+</a-button></a-overlay></a-mod>
+</div>
+
+<script>(function () {var Widget = require('alpha-widget/widget'),
+    ViewBinder = require('alpha-mixin/view-binder'),
+    cooper = require('alpha-cooper/cooper');
+
+require('../component');
+require('alpha-overlay/component');
+
+var Mod = Widget.extend({
+    Implements: [ViewBinder],
+
+    observe: ['open', 'close'],
+
+    attrs:{
+        template: '<div><a-button size="small" bd-click="open">abc</a-button><a-overlay><p>abc</p><a-button type="primary" bd-click="close">close</a-button></a-overlay></div>',
+        parentNode: '#test'
+    },
+
+    setup: function(){
+        this.overlay = this.element.find('a-overlay')[0];
+    },
+
+    open: function(e){
+        this.overlay.set('align',{
+            baseElement: e.currentTarget,
+            selfXY:[0,0],
+            baseXY:[0,'100%']
+        });
+        this.overlay.show();
+    },
+
+    close: function(){
+        this.overlay.hide();
+    }
+});
+
+cooper.bridge('a-mod', Mod);
+}());</script>
+
+
+</body></html>

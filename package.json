@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "html2svg": "^1.0.1"
+  }
+}

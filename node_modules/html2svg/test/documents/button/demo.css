@@ -1,0 +1,45 @@
+html>body{
+    box-sizing: border-box;
+    width : 95%;
+    padding : 20px 20px 20px 40px;
+}
+body>h1:first-child{
+    margin-left: -20px;
+    line-height: 1.5;
+}
+body>h2{
+    margin:50px 0 10px -20px;
+    padding-left: 10px;
+    border-left: 6px solid #1686CC;
+}
+body>h1~p,
+body>h2~p{
+    margin: 20px;
+    margin-left: 0;
+    padding-left: 8px;
+    border-left: 3px solid #999;
+    color: #666;
+}
+body>h2~p:first:before{
+	display: inline-block;
+	height: 20px;
+    margin-left: -20px;
+	border-left: 3px;
+	color:#333;
+}
+body>blockquote{
+    margin:20px;
+    margin-left: 0;
+    padding: 8px;
+    border: 1px dotted #ddd;
+    color: #666;
+}
+body>blockquote p{
+    margin-bottom: 0;
+}
+body>blockquote code{
+    display: inline-block;
+    margin: 0 4px;
+    color: #cc1414;
+    font-family: "Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+}
