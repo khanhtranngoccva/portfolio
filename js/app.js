@@ -47,8 +47,8 @@
     
     function fadeIn(element, time, easing="linear") {
         element.style.removeProperty("animation");
-
         element.style.removeProperty("display");
+        element.style.opacity = '0';
         setTimeout(()=>{
             element.style.animation = `fadeIn ${time}s ${easing} forwards`;
             console.log("oof");
