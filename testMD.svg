@@ -1,0 +1,269 @@
+<svg fill="none" viewBox="0 0 1500 1000" width="1500" height="1000" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8"/>
+                    <meta name="viewport"
+                          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"/>
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+                    <link rel="icon" href="img/icon-sm.jpg"/>
+                    <link rel="stylesheet" href="fonts/fonts.css"/>
+                    <link rel="stylesheet" href="css/app.css"/>
+                    <link rel="stylesheet" href="css/theme.css"/>
+                    <link rel="stylesheet" href="css/bonus.css"/>
+                    <title>Khanh Tran's Portfolio</title>
+                </head>
+                <body>
+                    <main class="glassMorphism">
+                        <header>
+                            <nav class="desktopNav">
+<!--                                <button class="desktopButtons" id="connect">Let's Connect!</button>-->
+                                <a href="#illustrations">Illustrations</a>
+                                <a href="#cssArt">CSS Art</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#skills">Skills</a>
+                                <a href="#services">Services</a>
+                            </nav>
+                        </header>
+                        <section class="mainBanner">
+                            <div class="mainIconContainer">
+                                <img class="mainIcon" src="img/icon.jpg" alt="Personal Profile"/>
+                                <span class="mainTextBox">
+
+                                </span>
+                            </div>
+                            <div class="mainText">
+                                <h1>
+                                    <span>Hi</span>! I'm Khanh Tran, a <strong class="rotatingTextOuter">
+                                    <span class="rotatingTextOverlay">
+                                        <span class="rotatingTextInner">Software Engineer.</span>
+                                        <span class="rotatingTextInner">CSS Artist.</span>
+                                        <span class="rotatingTextInner">UI Designer.</span>
+                                        <span class="rotatingTextInner">Content Creator.</span>
+                                    </span>
+                                </strong>
+                                </h1>
+                                <p>I'm an 18-year-old who builds beautiful and helpful websites and web software, shares my learning experience in public, and uplifts hundreds of folks 280 characters at a time.</p>
+                                <p>Let's work together to create beautiful websites and illustrations that impress your customers and boost your brand presence!</p>
+                            </div>
+                        </section>
+                        <section id="services">
+                            <h2>My Services</h2>
+                            <ul class="servicesList">
+                                <li class="modularCard glassMorphism">
+                                    <img src="img/serviceIcons/WebDevelopment.svg" alt="Web Development"/>
+                                    <h3>Website Development</h3>
+                                    <p>I'll build your website with HTML, CSS and JavaScript, tailored for you and/or your company! After
+                                        development, let's work together to deploy your brand new website on the interwebz.</p>
+                                </li>
+                                <li class="modularCard glassMorphism">
+                                    <img src="img/serviceIcons/ResponsiveWeb.svg" alt="Responsive Design on Multiple Devices"/>
+                                    <h3>Responsive Web Design</h3>
+                                    <p>More than half of your webpage visits come from mobile phones, so it's important that your websites
+                                        look
+                                        awesome on screens of all sizes, big or small.</p>
+                                </li>
+                                <li class="modularCard glassMorphism">
+                                    <img src="img/serviceIcons/Illustration.svg" alt="Illustration"/>
+                                    <h3>CSS Art and Illustration</h3>
+                                    <p>I'll create an awesome infographic sketch using OneNote or an illustration using CSS on any topic you
+                                        want. Use it to inspire others on your
+                                        social media!</p>
+                                </li>
+                                <li class="modularCard glassMorphism">
+                                    <img src="img/serviceIcons/Twitter.svg" alt="Twitter Promotion"/>
+                                    <h3>Promote me!</h3>
+                                    <p>I'll post your beautiful software (up to twice per week) on my Twitter profile for everyone to see,
+                                        and get some traffic to
+                                        your landing page! Not enough visits? Money back guaranteed! 😛</p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="skills">
+                            <h2>My Skills</h2>
+                            <ul class="proficiencyList">
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/HTML5.svg" alt="HTML"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/CSS3.svg" alt="CSS"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/JS.svg" alt="JavaScript"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/Python.svg" alt="Python"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/Accessibility.svg" alt="Web Accessibility"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/Git.svg" alt="Git"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/GitHub.svg" alt="GitHub"/>
+                                </li>
+                                <li class="modularCard glassMorphism proficiencyCard">
+                                    <img src="img/proficiencyIcons/SEO.svg" alt="SEO"/>
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="projects">
+                            <h2>My Projects!</h2>
+                            <ul class="projectList">
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://tranquil.is">
+                                        <img src="img/websites/Tranquil.webp" alt="Tranquil - Main clock screen"/>
+                                        <h3>Tranquil</h3>
+                                        <p>A minimalistic timer and to-do list app that harnesses the power of the Pomodoro technique.
+                                            Features
+                                            calming white noises that helps the user focus, and a no-distraction mode that stops the user
+                                            from using the computer while focusing.</p>
+                                        <ul class="projectTags">
+                                            <li class="glassMorphism">HTML</li>
+                                            <li class="glassMorphism">CSS</li>
+                                            <li class="glassMorphism">JavaScript</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://khanhtranngoccva.github.io/FlashCode">
+                                        <img src="img/websites/FlashCode.webp" alt="FlashCode - Recall screen"/>
+                                        <h3>FlashCode</h3>
+                                        <p>Anki, but with optimized UI which supports syntax highlighting like an IDE. The app uses the
+                                            SuperMemo2 algorithm to choose cards that the user needs to review.</p>
+                                        <ul class="projectTags">
+                                            <li class="glassMorphism">HTML</li>
+                                            <li class="glassMorphism">CSS</li>
+                                            <li class="glassMorphism">JavaScript</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://codepen.io/khanhtranngoccva/full/VwyBxXm">
+                                        <img src="img/websites/Leaderboard.webp" alt="Leaderboard Standings"/>
+                                        <h3>#100Devs Leaderboard</h3>
+                                        <p>Who's the best at DSA among #100Devs? This awesome leaderboard tracks their scores in
+                                            CodeWars!</p>
+                                        <ul class="projectTags">
+                                            <li class="glassMorphism">HTML</li>
+                                            <li class="glassMorphism">CSS</li>
+                                            <li class="glassMorphism">JavaScript</li>
+                                            <li class="glassMorphism">REST APIs</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://codepen.io/khanhtranngoccva/full/jOaxjvM">
+                                        <img src="img/websites/Television.webp" alt="Twitch Television"/>
+                                        <h3>MiniTwitch</h3>
+                                        <p>A floating remote-controlled TV that plays Twitch code streamers. Sit down, relax, and enjoy!</p>
+                                        <ul class="projectTags">
+                                            <li class="glassMorphism">HTML</li>
+                                            <li class="glassMorphism">CSS</li>
+                                            <li class="glassMorphism">JavaScript</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://catcrunch.netlify.app/">
+                                        <img src="img/websites/CatCrunch.webp" alt="CatCrunch Landing Page"/>
+                                        <h3>CatCrunch</h3>
+                                        <p>TechCrunch landing page, but everything got changed to... kittens. What?</p>
+                                        <ul class="projectTags">
+                                            <li class="glassMorphism">HTML</li>
+                                            <li class="glassMorphism">CSS</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://ayeshasalon2.netlify.app">
+                                        <img src="img/websites/Salon.webp" alt="Ayesha's Salon"/>
+                                        <h3>Ayesha's Hair Salon</h3>
+                                        <p>Just a cool-looking webpage of a superb salon.</p>
+                                        <ul class="projectTags">
+                                            <li class="glassMorphism">HTML</li>
+                                            <li class="glassMorphism">CSS</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="cssArt">
+                            <h2>My CSS Art</h2>
+                            <ul class="cssArtList">
+                                <li class="modularCard withLinks glassMorphism"><a href="https://codepen.io/khanhtranngoccva/full/yLpwRpz">
+                                    <img src="img/cssArt/Fuji.webp" alt="CSS Sunrise on Mount Fuji"/>
+                                    <h3>CSS Sunrise on Mount Fuji</h3></a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism"><a href="https://codepen.io/khanhtranngoccva/full/PoEmNBY">
+                                    <img src="img/cssArt/TajMahal.webp" alt="CSS Taj Mahal"/>
+                                    <h3>CSS Taj Mahal</h3></a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism"><a href="https://codepen.io/khanhtranngoccva/full/xxPWpNV">
+                                    <img src="img/cssArt/Steak.webp" alt="CSS Steak!"/>
+                                    <h3>CSS Steak!</h3></a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism"><a href="https://codepen.io/khanhtranngoccva/full/vYpXEoE">
+                                    <img src="img/cssArt/Eiffel.webp" alt="CSS Eiffel Tower"/>
+                                    <h3>CSS Eiffel Tower</h3></a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism"><a href="https://codepen.io/khanhtranngoccva/full/ExoBexJ">
+                                    <img src="img/cssArt/Cheesecake.webp" alt="CSS Strawberry Cheesecake"/>
+                                    <h3>CSS Strawberry Cheesecake</h3></a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism"><a href="https://codepen.io/khanhtranngoccva/full/eYyGMJz">
+                                    <img src="img/cssArt/Flag.webp" alt="CSS Transgender Awareness Day Flag"/>
+                                    <h3>CSS Transgender Awareness Day Flag</h3></a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="illustrations">
+                            <h2>My illustrations</h2>
+                            <ul class="illustrationList">
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://twitter.com/khanhtncva/status/1518266741797027840">
+                                        <img src="img/illustrations/BestFriends.webp" alt="8 signs of a true friend"/>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://twitter.com/khanhtncva/status/1496804656894574599">
+                                        <img src="img/illustrations/CSSSkew.webp" alt="CSS transform skew() function"/>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://twitter.com/khanhtncva/status/1503779341733281793">
+                                        <img src="img/illustrations/SeparationOfConcerns.webp"
+                                             alt="Separation of Concerns for Web Development"/>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://twitter.com/khanhtncva/status/1494365455313960960">
+                                        <img src="img/illustrations/CSSFlexbox.webp" alt="CSS Flexbox Cheatsheet"/>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://twitter.com/khanhtncva/status/1500797401929764870">
+                                        <img src="img/illustrations/CSSFilterBlur.webp" alt="CSS filter blur() function"/>
+                                    </a>
+                                </li>
+                                <li class="modularCard withLinks glassMorphism">
+                                    <a href="https://twitter.com/14xFounder/status/1507755648724844548">
+                                        <img src="img/illustrations/Burnout.webp" alt="Burnout"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </main>
+                </body>
+            </html>
+        </div>
+    </foreignObject>
+    <script href="js/app.js">
+
+    </script>
+    <script href="js/bonus.js">
+
+    </script>
+</svg>

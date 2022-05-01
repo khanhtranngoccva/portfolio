@@ -29,7 +29,7 @@
         });
     }
     
-    document.body.delegate("click", ".fa-xmark", function() {
+    document.querySelector("body").delegate("click", ".fa-xmark", function() {
         fadeOut(document.querySelector("#" + this.getAttribute("targetElement")), 0.25);
     });
     
