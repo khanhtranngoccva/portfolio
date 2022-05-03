@@ -103,11 +103,11 @@ main, .linkTree {
 .mainIconContainer {
     position: relative;
     margin-block: 3rem;
-    cursor: pointer;
     z-index: 0;
 }
 
 .mainIcon {
+    cursor: pointer;
     width: 20rem;
     aspect-ratio: 1/1;
     border-radius: 50%;

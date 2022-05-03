@@ -17,9 +17,9 @@
         setTimeout(() => element.classList.add(animClass), 1);
     }
     
-    document.querySelector(".mainIcon").addEventListener("click", function (e) {
-        startClassAnimation(this, "nudge");
-    });
+    Array.from(document.querySelectorAll(".mainIconContainer *")).forEach(item=>item.addEventListener("click", function (e) {
+        startClassAnimation(document.querySelector(".mainIcon"), "nudge");
+    }));
     
     HTMLElement.prototype.delegate = function (eventName, childSelector, callback) {
         this.addEventListener(eventName, function (e) {

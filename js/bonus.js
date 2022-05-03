@@ -32,7 +32,7 @@
 
     nextTextForBubble();
 
-    document.querySelector(".mainIconContainer").addEventListener("click", function (e) {
+    Array.from(document.querySelectorAll(".mainIconContainer *")).forEach(i=>i.addEventListener("click", function (e) {
         nextTextForBubble();
-    });
+    }));
 }());
