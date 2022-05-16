@@ -1,6 +1,6 @@
 :root {
     --mainGradient: linear-gradient(90deg, #7be3ff 0%, #92FE9D 100%);
-    --textGradient: linear-gradient(90deg, #009bc2 0%, #31d541 100%);
+    --textGradient: linear-gradient(90deg, #00ccfd 0%, #00e577 100%);
     --cardTransparency: 0.6;
 }
 
