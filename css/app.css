@@ -140,39 +140,77 @@ main, .linkTree {
 .modularCard {
     padding-inline: 1em;
     border-radius: 1em;
-}
-
-.modularCard.withLinks {
-    padding-inline: 0;
+    position: relative;
     transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-block: 1em;
+    row-gap: 1em;
 }
 
-.modularCard.withLinks:hover {
-    transform: scale(1.03);
+.modularCard.withNormalLinks {
+    padding-inline: 0;
+}
+
+.modularCard.withNormalLinks:hover, .modularCard.withLayeredLinks:hover {
+    transform: scale(1.01);
     filter: brightness(1.05);
 }
 
-.modularCard.withLinks > a {
+.modularCard.withNormalLinks > a {
     /* A rather cool hack. If you don't do something special, it's just display block with no collapse.*/
-    display: table;
+    display: flex;
+    flex-direction: column;
     padding-inline: 1em;
+    row-gap: 1em;
     width: 100%;
     height: 100%;
 }
 
-.modularCard h3 {
-    margin-block: 1em;
+.modularCard * {
+    margin: 0;
 }
 
-.modularCard ul {
-    margin-block: 1em;
+.modularCard h3 {
+    font-size: 1.5em;
+}
+
+.modularCard p:last-of-type {
+    flex: 1;
 }
 
 .modularCard img {
-    margin-block: 1em;
     border-radius: 1em;
 }
 
+.fullCardLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.innerCardLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.innerCardLink {
+    position: relative;
+    z-index: 2;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: inline-flex;
+    column-gap: 0.5em;
+    align-items: center;
+}
+
+.innerCardLink i {
+    font-size: 1.25em;
+}
 
 .servicesList, .projectList, .proficiencyList, .cssArtList, .illustrationList, .links {
     display: grid;
@@ -370,24 +408,21 @@ main, .linkTree {
     .servicesList {
         grid-template-columns: repeat(4, 1fr);
     }
+}
 
+@media only all and (min-width: 1200px)  {
     .cssArtList, .illustrationList, .projectList {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 
-@media only all and (min-width: 1200px) {
+@media only all and (min-width: 1500px) {
     html {
         font-size: 20px;
     }
 }
 
-@media only all and (min-width: 1500px) {
-    html {
-        font-size: 24px;
-    }
-}
 
 @keyframes fadeIn {
     0% {

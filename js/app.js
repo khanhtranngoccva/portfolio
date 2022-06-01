@@ -4,7 +4,9 @@
         HTML: "#ff8f8f",
         CSS: "#51eaff",
         JavaScript: "#ffe86f",
-        "REST APIs": "#51FFA2"
+        "REST APIs": "#51FFA2",
+        NodeJS: "#03e36f",
+        Webpack: "#3ea9ff",
     }
 
     for (let element of document.querySelectorAll(".projectTags li")) {
