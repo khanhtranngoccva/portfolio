@@ -4,9 +4,10 @@
         HTML: "#ff8f8f",
         CSS: "#51eaff",
         JavaScript: "#ffe86f",
-        "REST APIs": "#51FFA2",
+        "REST APIs": "#11d06a",
         NodeJS: "#03e36f",
         Webpack: "#3ea9ff",
+        MongoDB: "#2cf56b",
     }
 
     for (let element of document.querySelectorAll(".projectTags li")) {
